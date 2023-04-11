@@ -1,4 +1,4 @@
-public class Transport {
+public abstract class Transport {
 
     private String type;
 
@@ -10,8 +10,8 @@ public class Transport {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
+
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
     }
 
     public void printInfo() {
@@ -19,8 +19,6 @@ public class Transport {
         System.out.println("model = " + getModelName());
         System.out.println("wheels = " + getWheelsCount());
     }
-
-
 
     public String getModelName() {
         return modelName;
@@ -45,5 +43,11 @@ public class Transport {
     public void setWheelsCount(int wheelsCount) {
         this.wheelsCount = wheelsCount;
     }
-}
 
+    public void tyresService() {
+        System.out.println("Обслуживаем " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
+    }
+}

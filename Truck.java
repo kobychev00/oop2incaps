@@ -6,7 +6,7 @@ public class Truck extends Car {
 
     @Override
     public void updateTyre() {
-        System.out.println("Меняем шину грузовика");
+        System.out.println("Меняем покрышку у грузовика");
     }
 
     @Override

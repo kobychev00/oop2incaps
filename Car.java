@@ -6,7 +6,7 @@ public class Car extends Bicycle {
 
     @Override
     public void updateTyre() {
-        System.out.println("Меняем шину авто");
+        System.out.println("Меняем покрышку у авто");
     }
 
     public void checkEngine() {

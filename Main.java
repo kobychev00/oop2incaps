@@ -4,11 +4,11 @@ public class Main {
         System.out.println("забыл сделать branch hw");
 
 
-        Bicycle stels = new Bicycle("Велосипед", "Stels 4", 4);
+        Bicycle stels = new Bicycle("Велосипед", "Stels 4", 2);
         stels.printInfo();
         stels.updateTyre();
 
-        Bicycle forward = new Bicycle("Велосипед", "Forward 4", 4);
+        Bicycle forward = new Bicycle("Велосипед", "Forward 4", 2);
         forward.printInfo();
         forward.updateTyre();
 
@@ -36,12 +36,12 @@ public class Main {
         kamaz.checkEngine();
 
         ServiceStationC station = new ServiceStationC();
-        station.check(audi, null, null);
-        station.check(bmw, null, null);
-        station.check(null, stels, null);
-        station.check(null, forward, null);
-        station.check(null, null, man);
-        station.check(null, null,kamaz);
+        station.check(audi);
+        station.check(bmw);
+        station.check(stels);
+        station.check(forward);
+        station.check(man);
+        station.check(kamaz);
 
 
     }
